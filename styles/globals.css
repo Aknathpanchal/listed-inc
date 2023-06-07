@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* > *{
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Sidebar */
+
+.sidebarOuterContainer {
+  background: #000000;
+  border-radius: 30px;
+  padding: 40px 35px;
+  height: calc(100vh - 80px);
+  width: 280px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 40px;
+  left: 40px;
+}
+
+.sidebarTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.sidebarInnerContainer {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: calc(100vh - 244px);
+}
+.sidebarTitleContainer {
+  display: flex;
+}
+.sidebarNavigationTitle {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.sidebarBottomTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+
+/* Dashboard */
+
+.container {
+  display: flex;
+  height: max(100%, 100vh);
+  width: 100%;
+  padding: 40px;
+  background: #f5f5f5;
+}
+
+/* Card CSS */
+
+.cardOuterContainer {
+  display: flex;
+  margin: 40px 0px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cardContainer {
+  height: 120px;
+  width: 200px;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.cardInnerContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cardTitle {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 5px;
+}
+.cardNumber {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+
+/* Activity Card CSS*/
+
+.activityContainer {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 20px;
+  height: 30%;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+.activityTitle {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+.activityRange {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #858585;
+  margin-right: 5px;
+}
+.activityInnerContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.chartContainer {
+  height: 350px;
+}
+
+
+/* Schedule CSS */
+
+.scheduleContainer {
+  width: 480px;
+  height: 256px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+}
+.innerScheduleContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.scheduleTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+.seeAllContainer {
+  display: flex;
+  align-items: center;
+}
+.seeAll {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #858585;
+  margin-right: 5px;
+}
+.innerScheduleContainer {
+  display: flex;
+}
+.outerMeetingContainer {
+  display: flex;
+  flex-direction: column;
+}
+.meetingContainer {
+  display: flex;
+  margin-top: 13px;
+}
+.sideRectangle {
+  height: 66px;
+  width: 5px;
+  margin-right: 15px;
+}
+.meetingTitle {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #666666;
+  margin-bottom: 5px;
+}
+.meetingTime {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #999999;
+  margin-bottom: 5px;
+}
+.meetingLocation {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #999999;
+}
+
+
+/* TopProduct CSS */
+
+.productContainer {
+  height: 256px;
+  width: 480px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+}
+.productHeading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+.productRange {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #858585;
+  margin-right: 5px;
+}
+.topInternalProductContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.range {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.bottomInternalproductContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.circle {
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.productLabel {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+.percentage {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #858585;
+  margin: 5px 0px 15px 20px;
+}
+
+
+
+
+canvas{
+  /* height: 40% !important; */
+}

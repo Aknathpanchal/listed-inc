@@ -91,7 +91,7 @@ const SignIn = () => {
                 className="input"
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <div className="forgotPassword">Forgot password?</div>
+              <div className="forgotPassword text-blue-500 cursor-pointer">Forgot password?</div>
               <button
                 type="submit"
                 className="submitBtn"
@@ -102,7 +102,7 @@ const SignIn = () => {
             </form>
             <div className="title">
               Don't have an account?{" "}
-              <span style={{ color: "#346BD4", cursor: "pointer" }}>
+              <span className="text-blue-500 cursor-pointer">
                 Register here
               </span>
             </div>

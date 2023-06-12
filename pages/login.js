@@ -12,9 +12,9 @@ export default function Login(){
     const [show, setShow] = useState(false)
 
     // Google Handler function
-    // async function handleGoogleSignin(){
-    //     signIn('google', { callbackUrl : "http://localhost:3000"})
-    // }
+    async function handleGoogleSignin(){
+        signIn('google', { callbackUrl : "/"})
+    }
 
     return (
         <Layout>
@@ -31,7 +31,7 @@ export default function Login(){
 
             <div className='flex justify-between gap-3'>
                 <div className="input-button rounded-xl bg-white w-full" >
-                    <button type='button rounded-xl bg-white' onClick={() => signIn()} className={styles.button_custom}>
+                    <button type='button rounded-xl bg-white' onClick={() => handleGoogleSignin()} className={styles.button_custom}>
                         <Image src={'/assets/google.svg'} width="20" height={20} ></Image> Sign In with Google 
                     </button>
                 </div>

@@ -58,6 +58,8 @@
 import React, { useEffect } from "react";
 import { useRouter } from 'next/router';
 import styles from "../styles/header.module.css";
+import { signOut } from "next-auth/react";
+
 
 const Header = () => {
   const router = useRouter();
@@ -95,8 +97,7 @@ const Header = () => {
           src="/assets/Profile.svg"
           className={styles.profilePicture}
           onClick={() => {
-            window.sessionStorage.removeItem("user");
-            router.push('/');
+           signOut({callbackUrl:"/login"})
           }}
         />
       </div>

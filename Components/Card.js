@@ -52,21 +52,7 @@ const Card = () => {
 </div>
 
 
-      {/* <div className="cardOuterContainer">
-        {cardData.map((item, index) => (
-          <div
-            className="cardContainer"
-            style={{ backgroundColor: item.color }}
-            key={index}
-          >
-            <div className="cardInnerContainer">
-              <div className="cardTitle">{item.title}</div>
-              <div className="cardNumber">{item.number}</div>
-            </div>
-            <item.icon />
-          </div>
-        ))}
-       </div> */}
+ 
     </>
   );
 };
